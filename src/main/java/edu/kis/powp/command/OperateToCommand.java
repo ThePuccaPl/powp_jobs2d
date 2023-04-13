@@ -12,7 +12,7 @@ public class OperateToCommand implements DriverCommand{
         this.driver = driver;
     }
 
-    private void OperateToCommand(Job2dDriver driver, int x, int y){
+    public OperateToCommand(Job2dDriver driver, int x, int y){
         this.driver = driver;
         this.x = x;
         this.y = y;
