@@ -13,9 +13,9 @@ public class ShapeFactory {
     public static DriverCommand getSquare(Job2dDriver driver){
         List<DriverCommand> driverCommandList = new ArrayList<DriverCommand>();
         driverCommandList.add(new SetPositionCommand(driver,0,0));
-        driverCommandList.add(new OperateToCommand(driver, 10, 0));
-        driverCommandList.add(new OperateToCommand(driver, 10, 10));
-        driverCommandList.add(new OperateToCommand(driver, 0, 10));
+        driverCommandList.add(new OperateToCommand(driver, 100, 0));
+        driverCommandList.add(new OperateToCommand(driver, 100, 100));
+        driverCommandList.add(new OperateToCommand(driver, 0, 100));
         driverCommandList.add(new OperateToCommand(driver, 0, 0));
         return new ComplexCommand(driverCommandList);
     }
@@ -23,8 +23,8 @@ public class ShapeFactory {
     public static DriverCommand getTriangle(Job2dDriver driver){
         List<DriverCommand> driverCommandList = new ArrayList<DriverCommand>();
         driverCommandList.add(new SetPositionCommand(driver,0,0));
-        driverCommandList.add(new OperateToCommand(driver, 10, 0));
-        driverCommandList.add(new OperateToCommand(driver, 5, 5));
+        driverCommandList.add(new OperateToCommand(driver, 100, 0));
+        driverCommandList.add(new OperateToCommand(driver, 50, 50));
         driverCommandList.add(new OperateToCommand(driver, 0, 0));
         return new ComplexCommand(driverCommandList);
     }
@@ -32,9 +32,9 @@ public class ShapeFactory {
     public static DriverCommand getRectangle(Job2dDriver driver){
         List<DriverCommand> driverCommandList = new ArrayList<DriverCommand>();
         driverCommandList.add(new SetPositionCommand(driver,0,0));
-        driverCommandList.add(new OperateToCommand(driver, 10, 0));
-        driverCommandList.add(new OperateToCommand(driver, 10, 15));
-        driverCommandList.add(new OperateToCommand(driver, 0, 15));
+        driverCommandList.add(new OperateToCommand(driver, 200, 0));
+        driverCommandList.add(new OperateToCommand(driver, 200, 150));
+        driverCommandList.add(new OperateToCommand(driver, 0, 150));
         driverCommandList.add(new OperateToCommand(driver, 0, 0));
         return new ComplexCommand(driverCommandList);
     }
